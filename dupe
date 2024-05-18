@@ -1,0 +1,20 @@
+local remoteEvent = game:GetService("ReplicatedStorage"):WaitForChild("dataRemoteEvent")
+
+local args = {
+    [1] = {
+        [1] = {
+            [1] = "3133363764373933326438343431353361386332336633303362383162316461",
+            [2] = 2329446800,
+            [3] = "g",
+            [4] = "g",
+            [5] = 3000,
+            [6] = ""
+        },
+        [2] = "UJ"
+    }
+}
+
+while true do
+    remoteEvent:FireServer(unpack(args))
+    wait(0.1)
+end
